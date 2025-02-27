@@ -1,0 +1,39 @@
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 24px;
+}
+
+#form h1 {
+ font-weight: bold;
+ font-size: 36px;
+}
+
+#form p {
+    font-size: 18px;
+}
+
+#form a {
+    color:#1E1E1E;
+    text-decoration: underline;
+}
+
+#form input {
+    background-color: #E8E8E8;
+    border: 0;
+    height: 40px;
+    border-radius: 0;
+    padding: 20px;
+}
+
+#form input:active, #form input:hover, #form input:focus {
+    box-shadow: none;
+}
+
+.smallp{
+    font-size: 16px!important;
+}
