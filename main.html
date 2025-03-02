@@ -1,42 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="speech-to-text, распознавание речи, транскрипция аудио, конвертация аудио в текст, автоматическая транскрипция, AI speech recognition, аудиофайл в текст, Just Audio AI, speech recognition software, voice-to-text, расшифровка интервью, стенография, субтитры AI, обработка речи, генерация субтитров">
-  <meta name="description" content="Just Audio AI — это инновационный сервис для автоматической транскрипции аудио в текст. Высокая точность, поддержка нескольких языков, быстрый результат.">
-  <meta name="author" content="Just Audio AI">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/main.css">
   <title>just.audio.ai</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css">
 </head>
 <body>
-
   <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
       <div class="row w-100 align-items-center text-center">
         <div class="col-2 d-flex flex-column align-items-start">
-          <a class="nav-link" href="#">FAQ</a>
-          <a class="nav-link" href="#">Контакты</a>
+          <a class="nav-link d-none d-md-block" href="#">FAQ</a>
+          <a class="nav-link d-none d-md-block" href="#">Контакты</a>
         </div>
         <div class="col-4">
           <a class="navbar-brand fw-bold" href="#">just.audio.ai</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 d-none d-md-block">
           <a class="nav-link" href="#">Инструкция</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 d-none d-md-block">
           <a class="nav-link" href="#">Аккаунт</a>
         </div>
       </div>
     </div>
   </nav>
-
   <div class="container" id="main_wrap">
-    <h1>Быстрый перевод из аудио в текст всего за пару минут</h1>
+    <div class="col-md-7 mt-4">
+      <h1>Быстрый перевод из аудио в текст всего за пару минут</h1>
+    </div>
+    <div class="upload-box d-none d-md-block mt-3 d-flex flex-column justify-content-center align-items-center w-50 mx-auto" id="dropzone">
+      <img class="mb-2" src="./static/upload.svg" alt="">
+      <p class="mb-4">Перетащите файл сюда или загрузите нажав на кнопку</p>
+      <input type="file" id="fileInput" hidden>
+      <button class="upload-btn w-75" onclick="document.getElementById('fileInput').click()">Загрузить файл</button>
+    </div>
+    <button class="upload-btn w-75 d-block d-md-none mx-auto" onclick="document.getElementById('fileInput').click()">Загрузить файл</button>
+  </div>
+
+  <div class="container mt-5 steps-container">
+    <h2 class="mb-4">Как работает наш сервис</h2>
+    <div class="row mt-4" style="
+    margin-top: 5%!important;">
+      <div class="col-md-3">
+        <h4 class="mb-4">Шаг 1</h4>
+        <p>Создание продающих текстов требует знаний маркетинга, копирайтинга, современных техник продаж и психологии. Такие статьи заказывают профе</p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="mb-4">Шаг 2</h4>
+        <p>Создание продающих текстов требует знаний маркетинга, копирайтинга, совр</p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="mb-4">Шаг 3</h4>
+        <p>Создание продающих текстов требует знаний маркетинга, копирайтинга, современных техник продаж и психологии. Такие статьи заказывают профессиональным</p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="mb-4">Шаг 4</h4>
+        <p>Создание продающих текстов требует знаний маркетинга, копирайтинга, современных техник продаж и психологии. Такие статьи</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 prices">
+    <h2 class="mb-4">Сколько стоит</h2>
+    
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <p class="text-end disc">Скидка 60%</p>
+        <h4 class="text-center">100 минут</h4>
+        <p class="text-center">1 мин = 3 ₽</p>
+
+        <h5 class="text-center price">300 ₽ <span class="discount-price">500 ₽</span></h5>
+        <button class="buy-btn w-100 mx-auto">Купить за 300 рублей</button>
+      </div>
+      <div class="col-md-3">
+        <p class="text-end disc">Скидка 60%</p>
+        <h4 class="text-center">500 минут</h4>
+        <p class="text-center">1 мин = 2,4 ₽</p>
+
+        <h5 class="text-center price">1200 ₽ <span class="discount-price">2000 ₽</span></h5>
+        <button class="buy-btn w-100 mx-auto">Купить за 1200 рублей</button>
+      </div>
+      <div class="col-md-3">
+        <p class="text-end disc">Скидка 60%</p>
+        <h4 class="text-center">1000 минут</h4>
+        <p class="text-center">1 мин = 3 ₽</p>
+
+        <h5 class="text-center price">2000 ₽ <span class="discount-price">4000 ₽</span></h5>
+        <button class="buy-btn w-100 mx-auto">Купить за 2000 рублей</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Для чего мне это нужно?</h2>
+                <p>В целом о том, что это за система, как работает, что именно можно переводить (подкасты, интервью, лекции, и так далее), какая технология перевода используется. Все на очень простом языке объяснения.</p>
+            </div>
+            <div class="col-md-12 d-flex justify-content-end">
+              <iframe class="d-none d-md-block ms-auto" width="680" height="425" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
+          
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+              <h3>Языки</h3>
+              <p>В нашем сервисе возможно перевести на английский, испанский, французский, немецкий, португальский, итальянский, голландский, арабский и китайский.</p>
+                
+            </div>
+        </div>
+        <div class="col-md-12 d-flex justify-content-end">
+          <div class="row offset-md-6">
+              <h3 class="ms-auto">Экспорт</h3>
+              <p class="w-50">В нашем сервисе доступны переводы через всякие возможные форматы TXT, XLSX, DOCX ну и многие другие.</p>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+
+  <div class="container mt-5 vh-100">
+    <div class="d-flex">
+      <h2 class="mb-4 d-none d-md-block">FAQ</h2>
+    <div class="accordion mx-auto" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
+            Можно пользоваться сервисом бесплатно?
+          </button>
+        </h2>
+        <div id="question1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
+            Что такое значит перевод из аудио в текст?
+          </button>
+        </h2>
+        <div id="question2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question3">
+            Смогу ли я легко этим всем пользоваться как и все?
+          </button>
+        </h2>
+        <div id="question3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question4">
+            Есть ли ограничения по времени видео?
+          </button>
+        </h2>
+        <div id="question4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question5">
+            Видео с youtube можно расшифровать?
+          </button>
+        </h2>
+        <div id="question5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question6">
+            Скидка такая хорошая всегда будет или на первый раз только?
+          </button>
+        </h2>
+        <div id="question6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
   </div>
 </body>
 </html>

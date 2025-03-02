@@ -1,3 +1,7 @@
+body {
+    font-family: 'NeverMind', sans-serif;
+}
+
 .nav-link {
     color: black;
     font-size: 18px;
@@ -36,4 +40,101 @@
 
 .smallp{
     font-size: 16px!important;
+}
+
+div#main_wrap {
+    margin-top: 6%;
+}
+
+.upload-box {
+    background-color: #E8E8E8;
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5% !important;
+  }
+  .upload-btn {
+    background-color: #2F383C;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+  }
+
+  .buy-btn {
+    background-color: #2F383C;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10% !important;
+  }
+
+  .steps-container {
+    color: #1E1E1E;
+    font-weight: normal;
+    margin-top: 10%!important;
+    margin-bottom: 7%;
+  }
+  .steps-container h4 {
+    font-weight: normal;
+  }
+  .steps-container p {
+    font-size: 18px;
+    text-align: left;
+    max-width: 250px;
+  }
+  .discount-price {
+    color: rgba(30, 30, 30, 0.4);
+    text-decoration: line-through;
+    font-size: 36px;
+  }
+.price {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+  .disc {
+    font-size: 12px;
+  }
+
+  .accordion-item {
+    border: none!important;
+    background: transparent!important;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background: transparent!important;
+    color: #1E1E1E!important;
+    font-size: 18px!important;
+    font-weight: normal!important;
+    padding: 15px 20px!important;
+    display: flex!important;
+    align-items: center!important;
+    gap: 10px!important; 
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.accordion-button::after {
+    margin-left: auto!important;
+    color: #1E1E1E!important;
+}
+
+.accordion-button::after {
+    filter: brightness(0);
+}
+
+.accordion-button:focus {
+    box-shadow: none!important;
+}
+
+.accordion-body {
+    color: rgba(30, 30, 30, 0.4)!important;
+    font-size: 16px!important;
+}
+
+.prices{
+    margin-bottom: 5%;
 }
