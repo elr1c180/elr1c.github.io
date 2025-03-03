@@ -138,3 +138,28 @@ div#main_wrap {
 .prices{
     margin-bottom: 5%;
 }
+
+ #history a {
+  font-size: 36px;
+  text-decoration: none;
+  color: #1e1e1e !important;
+}
+
+#history p {
+  font-size: 18px!important;
+}
+
+.history {
+  font-size: 36px;
+}
+
+button.btn.btn-outline-light.px-4.py-2{
+border-radius: 0;
+    color: #1e1e1e;
+    background: white;
+    width: 40%;
+    padding: 0 !important;
+    font-size: 18px !important;
+    height: 35px;
+
+}

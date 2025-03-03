@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>just.audio.ai</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <div class="row w-100 align-items-center text-center">
+                <div class="col-2 d-flex flex-column align-items-start">
+                    <a class="nav-link d-none d-md-block" href="#faq">FAQ</a>
+                    <a class="nav-link d-none d-md-block" href="#">Контакты</a>
+                </div>
+                <div class="col-4">
+                    <a class="navbar-brand fw-bold" href="#">just.audio.ai</a>
+                </div>
+                <div class="col-4 d-flex flex-column align-items-start">
+                    <a class="nav-link d-none d-md-block" href="#faq">Инструкция</a>
+                    <a class="nav-link d-none d-md-block" href="#">Мои файлы</a>
+                </div>
+                <div class="col-2 d-none d-md-block text-end">
+                    <div class="d-flex align-items-center">
+                        <img src="static/avatar.png" alt="Avatar" class="rounded-circle me-2" width="40" height="40">
+                        <div>
+                            <a class="m-0"><u>Ivan Ivanov</u></a>
+                            <p class="m-0 text-muted text-start" style="font-size: 14px;">30 минут</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="history">
+        <div class="col-4 d-none d-md-block">
+            <div class="d-flex align-items-center">
+                <img src="static/avatar.png" alt="Avatar" class="rounded-circle me-4" width="140" height="140">
+                <div>
+                    <a class="m-0 text-start">Ivan Ivanov</a>
+                    <p class="m-0 text-muted text-start" style="font-size: 14px;">Ваш баланс: 30 минут</p>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="history mt-5">История платежей</h5>
+
+        <div class="accordion" id="paymentsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#payment1">
+                  <img src="static/wait.svg" alt="Иконка" width="24" height="24">
+                  02.02.2025 г. / 1 200 ₽
+                </button>
+              </h2>
+              <div id="payment1" class="accordion-collapse collapse" data-bs-parent="#paymentsAccordion">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><strong>Статус платежа:</strong> В ожидании</p>
+                      <p><strong>Дата платежа:</strong> 2 февраля 2025 г.</p>
+                      <p><strong>Сумма платежа:</strong> 1 200 ₽</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p><strong>Время платежа:</strong> 21:15</p>
+                      <p><strong>Купленные минуты:</strong> 500 минут</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><strong>ID:</strong> Gj64Bnkkn97njGJ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="paymentsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#payment2">
+                  <img src="static/done.svg" alt="Иконка" width="24" height="24">
+                  02.02.2025 г. / 1 200 ₽
+                </button>
+              </h2>
+              <div id="payment2" class="accordion-collapse collapse" data-bs-parent="#paymentsAccordion">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><strong>Статус платежа:</strong> В ожидании</p>
+                      <p><strong>Дата платежа:</strong> 2 февраля 2025 г.</p>
+                      <p><strong>Сумма платежа:</strong> 1 200 ₽</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p><strong>Время платежа:</strong> 21:15</p>
+                      <p><strong>Купленные минуты:</strong> 500 минут</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><strong>ID:</strong> Gj64Bnkkn97njGJ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    
+    <div class="container-fluid py-5 px-3" style="background-color: #003245;">
+        <div class="container text-white text-center mx-auto">
+          <h4 class="mb-5" style="font-size: 36px;">Приобретайте минуты по выгодной цене</h4>
+      
+          <div class="d-flex flex-column gap-4 align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-50 p-3 ">
+              <div class="text-center text-md-start flex-grow-1">
+                <p class="mb-1 fs-5"><strong>100 минут за 300 ₽</strong> <del class="text-light">500 ₽</del></p>
+                <p class="text-white-50 mb-0">1 мин = 3 ₽</p>
+              </div>
+              <button class="btn btn-outline-light px-4 py-2">Купить за 300 ₽</button>
+            </div>
+      
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-50 p-3 ">
+              <div class="text-center text-md-start flex-grow-1">
+                <p class="mb-1 fs-5"><strong>500 минут за 1200 ₽</strong> <del class="text-light">2000 ₽</del></p>
+                <p class="text-white-50 mb-0">1 мин = 2,4 ₽</p>
+              </div>
+              <button class="btn btn-outline-light px-4 py-2">Купить за 1200 ₽</button>
+            </div>
+      
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-50 p-3 ">
+              <div class="text-center text-md-start flex-grow-1">
+                <p class="mb-1 fs-5"><strong>1000 минут за 2000 ₽</strong> <del class="text-light">4000 ₽</del></p>
+                <p class="text-white-50 mb-0">1 мин = 2 ₽</p>
+              </div>
+              <button class="btn btn-outline-light px-4 py-2">Купить за 2000 ₽</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+
+</body>
+</html>
