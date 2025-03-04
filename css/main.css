@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'NeverMind', sans-serif;
 }
 
@@ -151,6 +151,7 @@ div#main_wrap {
 
 .history {
   font-size: 36px;
+  margin-top: 10% !important;
 }
 
 button.btn.btn-outline-light.px-4.py-2{
@@ -162,4 +163,18 @@ border-radius: 0;
     font-size: 18px !important;
     height: 35px;
 
+}
+
+.active-file{
+  background-color: #E8E8E8!important;
+}
+
+
+div#history {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+nav a {
+  color: #1E1E1E;
 }
